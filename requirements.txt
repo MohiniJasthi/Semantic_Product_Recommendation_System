@@ -18,4 +18,3 @@ python-Levenshtein
 joblib
 pygments
 google-cloud-storage
-zipfile
