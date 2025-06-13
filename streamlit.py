@@ -19,6 +19,7 @@ import base64
 import zipfile
 import io
 
+
 # Set page config for wider layout
 st.set_page_config(layout="wide")
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\sanju\AppData\Roaming\gcloud\application_default_credentials.json"
