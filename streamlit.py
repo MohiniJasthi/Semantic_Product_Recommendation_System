@@ -77,6 +77,7 @@ df = load_data()
 @st.cache_resource
 def load_embeddings():
     return np.load("embeddings5_new.npy")
+    
 
     # bucket = client.get_bucket("mlops_bucket_pr")
     # blob = bucket.blob("embeddings5_new.npy")
