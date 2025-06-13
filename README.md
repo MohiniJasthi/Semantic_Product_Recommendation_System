@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project demonstrates an advanced product recommendation engine designed for e-commerce platforms. By leveraging Sentence-BERT (SBERT) for semantic understanding, the system interprets and matches user queries with relevant products—even when keywords don’t exactly match—enabling more accurate and personalized recommendations.
+This project demonstrates an advanced product recommendation engine designed for e-commerce platforms. By leveraging Sentence-BERT (SBERT) for semantic understanding, the system interprets and matches user queries with relevant products even when keywords don’t exactly match, enabling more accurate and personalized recommendations.
 
 Key highlights:
 
