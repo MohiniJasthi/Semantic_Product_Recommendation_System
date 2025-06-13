@@ -2,39 +2,33 @@
 
 ## Introduction
 
-This project is an advanced implementation of a product recommendation system that leverages the power of Sentence Transformers. Initially, the recommendation system was built using KMeans and TF-IDF vectorizer, but in this enhanced version, we aimed to improve the recommendation quality by utilizing the latest natural language processing techniques.
+This project demonstrates an advanced product recommendation engine designed for e-commerce platforms. By leveraging Sentence-BERT (SBERT) for semantic understanding, the system interprets and matches user queries with relevant products—even when keywords don’t exactly match—enabling more accurate and personalized recommendations.
 
-A Sentence Transformer is a type of natural language processing model designed specifically to produce meaningful and useful sentence embeddings. Sentence embeddings are fixed-length numerical representations that capture the semantic meaning of a sentence.
+Key highlights:
 
-The traditional recommendation system based on KMeans and TF-IDF has limitations in capturing semantic and contextual similarities between products and user preferences. By adopting BERT and Sentence Transformers, we can overcome these limitations and provide more accurate and context-aware product recommendations.
+Text Embedding: Used Sentence-BERT to convert product descriptions and user queries into vector representations.
 
-The project was undertaken during an 8-week-long summer workshop held at the Center for Innovation and Entrepreneurship (CIE), PES University RR.
+Semantic Search: Applied cosine similarity to recommend contextually similar products.
+
+MLOps Integration: The model pipeline is containerized using Docker, tracked with MLflow, and deployed via Google Cloud Platform (GCP).
+
+User Interface: Built an interactive Streamlit dashboard for real-time search and recommendation visualization.
+
+This project is a scalable solution to enhance search experience and product discovery in modern e-commerce platforms.
+
+## Teammates
 
 The team behind this innovative project comprises:
 
 Sanjeev Durge
 Mohini Jasthi
 
-**Center for Innovation and Entrepreneurship (CIE)**: [Link to CIE](https://cie.pes.edu/)
-
-## Features
-
-- Utilizes BERT and Sentence Transformers for semantic understanding and context-aware recommendations.
-- Improves recommendation quality over the previous KMeans and TF-IDF based approach.
-- Supports custom user preferences to provide personalized recommendations.
-- Easy-to-use API for integrating the recommendation system into your applications.
-- Extensible and modifiable architecture to accommodate specific use cases.
-
-
-## Dataset
-
-The dataset(CSV file) used for training and evaluation can be downloaded from the following link: [Link to Dataset](https://github.com/VishalS-HK/product-recommendation-system-BERT/tree/main/data)
 
 
 ## Installation
 Clone the repository to your local machine:
 
 ```bash
-git clone git@github.com/SanjeevDurge/Product_Recommendation_System.git
-cd product-recommendation-system
+git clone git@github.com/MohiniJasthi/Semantic_Product_Recommendation_System.git
+cd semantic_product-recommendation-system
 ```
