@@ -16,6 +16,8 @@ from google.oauth2 import service_account
 from io import BytesIO
 import os
 import base64
+import zipfile
+import io
 
 # Set page config for wider layout
 st.set_page_config(layout="wide")
@@ -34,7 +36,9 @@ mlflow.set_tracking_uri(MLFLOW_URI)
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/flipkart_com-ecommerce_sample.csv")
+    with zipfile.ZipFile("data/flipkart_com-ecommerce_sample.zip") as z:
+        with z.open("flipkart_com-ecommerce_sample.csv") as f:
+            df = pd.read_csv(f)
     df = df[[
         "uniq_id", "product_name", "description", "brand",
         "product_category_tree", "product_url", "image",
